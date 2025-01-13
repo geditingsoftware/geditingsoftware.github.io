@@ -113,7 +113,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="Welcome-to-Genome-Editing-Software-Guide"><a href="#Welcome-to-Genome-Editing-Software-Guide" class="headerlink" title="Welcome to Genome Editing Software Guide"></a>Welcome to Genome Editing Software Guide</h2><p>We are collecting information on software for Genome Editing.<br>Our collection is over 200 tools <strong>(422 tools at 2023&#x2F;9&#x2F;9 UPDATE)</strong>. So you can find good tools supporting your research.</p>
+        <h2 id="Welcome-to-Genome-Editing-Software-Guide"><a href="#Welcome-to-Genome-Editing-Software-Guide" class="headerlink" title="Welcome to Genome Editing Software Guide"></a>Welcome to Genome Editing Software Guide</h2><p>We are collecting information on software for Genome Editing.<br>Our collection is over 200 tools <strong>(547 tools at 2025&#x2F;1&#x2F;13 UPDATE)</strong>. So you can find good tools supporting your research.</p>
 <p>If there is a comment, I would be happy if you contact us:<br>Administrator: <a target="_blank" rel="noopener" href="https://orcid.org/0000-0002-4469-664X">Kazuki Nakamae, Ph.D.</a> : e-mail: kazukinakamae_at_mark_gmail.com<br><a target="_blank" rel="noopener" href="https://bonohu.hiroshima-u.ac.jp/index_en.html">bonohu lab</a>, <a target="_blank" rel="noopener" href="https://www.mls.sci.hiroshima-u.ac.jp/smg/ge-innovation/index.html">Genome Editing Innovation Center</a>, <a target="_blank" rel="noopener" href="https://www.hiroshima-u.ac.jp/en">Hiroshima University</a>, <a target="_blank" rel="noopener" href="https://www.japan.go.jp/">Japan</a></p>
 <p>Citation info:<br>We described this webpage in the following review:<br><a target="_blank" rel="noopener" href="https://doi.org/10.1016/j.ggedit.2022.100018">Nakamae, K. and Bono, H. Genome editing and bioinformatics. Gene and Genome Editing, 100018 (2022).</a></p>
 <hr>
@@ -125,15 +125,18 @@
 <li><a href="#target-design-for-base-editing">Target Design for Base Editing</a></li>
 <li><a href="#target-design-for-prime-editing">Target Design for Prime Editing</a></li>
 <li><a href="#target-design-for-cas13">Target Design for Cas13</a></li>
+<li><a href="#target-design-for-tnpB">Target Design for TnpB</a></li>
 </ul>
 </li>
 <li><a href="#prediction-for-indel-disribution">Prediction for indel disribution</a></li>
-<li><a href="#prediction-for-restriction-endonuclease-site-after-genome-editing">Prediction for restriction endonuclease site after genome editing</a></li>
+<li><a href="#prediction-for-gene-expression">Prediction for gene expression after genome editing</a></li>
 <li><a href="#tide-analysis">TIDE Analysis</a></li>
 <li><a href="#sequencing-analysis">Sequencing Analysis</a><ul>
 <li><a href="#ngs-analysis-for-dna-amplicon-sequencing">NGS Analysis for DNA amplicon sequencing</a></li>
 <li><a href="#ngs-analysis-for-unbiased-dna-off-target-detection">NGS Analysis for unbiased DNA off-target detection</a></li>
+<li><a href="#ngs-analysis-for-wgs">NGS Analysis for WGS</a></li>
 <li><a href="#rna-seq-analysis-for-genome-editing">RNA-seq analysis for Genome Editing</a></li>
+<li><a href="#hic-analysis-for-genome-editing">Hi-C analysis for Genome Editing</a></li>
 <li><a href="#long-read-seqeuncing-analysis">long-read seqeuncing analysis</a></li>
 <li><a href="#featurizing-design-of-genome-editing">Featurizing design of genome editing</a></li>
 </ul>
@@ -142,22 +145,26 @@
 <li><a href="#pooled-crispr-screen">pooled CRISPR screen</a></li>
 <li><a href="#simulator-for-pooled-crispr-screen">simulator for pooled CRISPR screen</a></li>
 <li><a href="#tiling-crispr-screen">Tiling CRISPR screen</a></li>
+<li><a href="#automated-design-of-experiments">Automated Design of Gene-Editing Experiments</a></li>
 </ul>
 </li>
-<li><a href="#rna-editing">RNA editing</a></li>
 <li><a href="#crispr-biology">CRISPR Biology</a><ul>
 <li><a href="#crispr-array">CRISPR array</a></li>
 <li><a href="#annotation-mapping-lineage-analysis-of-crispr-array">annotation, mapping, lineage analysis of CRISPR array</a></li>
 <li><a href="#anti-crispr-acr">Anti-CRISPR (Acr)</a></li>
 </ul>
 </li>
+<li><a href="#protein-design">Protein design associated with genome editing</a></li>
 <li><a href="#phenotypic-analysis">Phenotypic Analysis</a><ul>
 <li><a href="#gene-analysis">Gene Analysis</a></li>
 <li><a href="#gene-function-analysis-using-genome-editing">Gene Function Analysis using Genome Editing</a></li>
 </ul>
 </li>
 <li><a href="#database">Database</a></li>
+<li><a href="#benchmarking-dataset">Benchmarking dataset</a></li>
 <li><a href="#integrated-platform">Integrated Platform</a></li>
+<li><a href="#educational-software">Educational software for genome editing</a></li>
+<li><a href="#lineage-tracing">CRISPR-based Lineage tracing</a></li>
 <li><a href="#other-tools-involved-with-crispr-science">Other tools involved with CRISPR science</a></li>
 <li><a href="#non-available-tools-for-us-20221109">Non-available tools for us (2022&#x2F;11&#x2F;09)</a><ul>
 <li><a href="#no-url-links">No URL links</a></li>
@@ -713,32 +720,101 @@
 </ul>
 <hr>
 <ol start="72">
-<li><a target="_blank" rel="noopener" href="https://github.com/cancerit/VaLiAnT">VaLiAnT</a></li>
-</ol>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://doi.org/10.1101/2021.01.19.427318">Barbon et al., 2021</a></li>
-<li><a target="_blank" rel="noopener" href="https://doi.org/10.1093/bioinformatics/btab776">Barbon et al., 2022</a></li>
-</ul>
-<hr>
-<ol start="73">
 <li><a target="_blank" rel="noopener" href="https://hicrispr.welkergroup.hu/">Hi-CRISPR</a></li>
 </ol>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://doi.org/10.1093/nar/gkaa1220">Tálas et al., 2021</a></li>
 </ul>
 <hr>
-<ol start="74">
-<li><a target="_blank" rel="noopener" href="https://github.com/bm2-lab/iGWOS">iGOWS</a></li>
-</ol>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://doi.org/10.1093/nar/gkaa930">Yan et al., 2020</a></li>
-</ul>
-<hr>
-<ol start="75">
+<ol start="73">
 <li><a target="_blank" rel="noopener" href="https://crispy-pop.glbrc.org/">CRISpy-pop</a></li>
 </ol>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://t.co/POsDmTkdIg?amp=1">Stoneman et al., 2020</a></li>
+</ul>
+<hr>
+<ol start="74">
+<li><a target="_blank" rel="noopener" href="https://autoesdcas.biodesign.ac.cn/">AutoESDCas</a></li>
+</ol>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.1021/acssynbio.4c00063">Yang et al., 2024</a></li>
+</ul>
+<hr>
+<ol start="75">
+<li><a target="_blank" rel="noopener" href="https://crispr-aidit.com/">CRISPR-AIdit(AIdit-Crispr)</a></li>
+</ol>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.1038/s41421-023-00549-9">Zhang et al., 2023</a></li>
+</ul>
+<hr>
+<ol start="76">
+<li><a target="_blank" rel="noopener" href="https://www.crisprte.cn/">CRISPR-TE</a></li>
+</ol>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.1186/s13100-024-00313-0">Guo et al., 2024</a></li>
+</ul>
+<hr>
+<ol start="77">
+<li><a target="_blank" rel="noopener" href="https://github.com/crisprVerse">crisprVerse</a></li>
+</ol>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.1038/s41467-022-34320-7">Hoberecht et al., 2022</a></li>
+</ul>
+<hr>
+<ol start="78">
+<li><a target="_blank" rel="noopener" href="https://streptocad.bioengineering.dtu.dk/">StreptoCAD</a></li>
+</ol>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.biorxiv.org/content/10.1101/2024.12.19.629370v1.abstract">Levassor et al., 2024</a></li>
+</ul>
+<hr>
+<ol start="79">
+<li><a target="_blank" rel="noopener" href="https://crispr.zhejianglab.com/index">EasyDesign</a></li>
+</ol>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.1002/imt2.214">Huang et al., 2024</a></li>
+</ul>
+<hr>
+<ol start="80">
+<li><a target="_blank" rel="noopener" href="https://schubert.bio.uniroma1.it/alpacas/">AlPaCas</a></li>
+</ol>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.1093/nar/gkae419">Rosignoli et al., 2024</a></li>
+</ul>
+<hr>
+<ol start="81">
+<li><a target="_blank" rel="noopener" href="https://portals.broadinstitute.org/gppx/fragmid/public">Fragmid</a></li>
+</ol>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.1016/j.xgen.2024.100519">McGee et al., 2024</a></li>
+</ul>
+<hr>
+<ol start="82">
+<li><a target="_blank" rel="noopener" href="https://rth.dk/resources/crispr/crispron/">CRISPRon</a></li>
+</ol>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.1093/bioinformatics/btac697">Anthon, Corsi, and Gorodkin, 2022</a></li>
+</ul>
+<hr>
+<ol start="83">
+<li><a target="_blank" rel="noopener" href="https://protospacejam.sf.czbiohub.org/">protoSpaceJAM</a></li>
+</ol>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.1093/nar/gkae553">Peng et al., 2024</a></li>
+</ul>
+<hr>
+<ol start="84">
+<li><a target="_blank" rel="noopener" href="https://biofoundry.web.illinois.edu/copies/">CRISPR-COPIES</a></li>
+</ol>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.1093/nar/gkae062">Boob et al., 2024</a></li>
+</ul>
+<hr>
+<ol start="85">
+<li><a target="_blank" rel="noopener" href="https://transcrispr.igcz.poznan.pl/transcrispr/">TransCRISPR</a></li>
+</ol>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.1093/nar/gkad355">Woźniak et al., 2023</a></li>
 </ul>
 <hr>
 <h4 id="CLI-tools"><a href="#CLI-tools" class="headerlink" title="CLI tools"></a>CLI tools</h4><p><strong>C&#x2F;C++</strong></p>
@@ -1132,6 +1208,21 @@
 </ol>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://doi.org/10.1038%2Fs41587-020-0555-7">Lazzarotto et al., 2020</a></li>
+</ul>
+<hr>
+<ol start="52">
+<li><a target="_blank" rel="noopener" href="https://github.com/cancerit/VaLiAnT">VaLiAnT</a></li>
+</ol>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.1101/2021.01.19.427318">Barbon et al., 2021</a></li>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.1093/bioinformatics/btab776">Barbon et al., 2022</a></li>
+</ul>
+<hr>
+<ol start="53">
+<li><a target="_blank" rel="noopener" href="https://github.com/bm2-lab/iGWOS">iGOWS</a></li>
+</ol>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.1093/nar/gkaa930">Yan et al., 2020</a></li>
 </ul>
 <hr>
 <p><strong>perl</strong></p>
@@ -1629,16 +1720,8 @@
 <li><a target="_blank" rel="noopener" href="https://doi.org/10.1093/nar/gkaa1156">Martínez-Gálvez et al., 2021</a></li>
 </ul>
 <hr>
-<p><a id="prediction-for-restriction-endonuclease-site-after-genome-editing"></a></p>
-<h2 id="Prediction-for-restriction-endonuclease-site-after-genome-editing"><a href="#Prediction-for-restriction-endonuclease-site-after-genome-editing" class="headerlink" title="Prediction for restriction endonuclease site after genome editing"></a>Prediction for restriction endonuclease site after genome editing</h2><h4 id="Web-tools-7"><a href="#Web-tools-7" class="headerlink" title="Web tools"></a>Web tools</h4><ol>
-<li><a target="_blank" rel="noopener" href="https://t.co/NE2igaOj3w?amp=1">CRISPRcruncher</a></li>
-</ol>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://doi.org/10.17912/micropub.biology.000343">Fay et al., 2021</a></li>
-</ul>
-<hr>
 <p><a id="tide-analysis"></a></p>
-<h2 id="TIDE-Analysis"><a href="#TIDE-Analysis" class="headerlink" title="TIDE Analysis"></a>TIDE Analysis</h2><h4 id="Web-tools-8"><a href="#Web-tools-8" class="headerlink" title="Web tools"></a>Web tools</h4><p><a id="tide"></a></p>
+<h2 id="TIDE-Analysis"><a href="#TIDE-Analysis" class="headerlink" title="TIDE Analysis"></a>TIDE Analysis</h2><h4 id="Web-tools-7"><a href="#Web-tools-7" class="headerlink" title="Web tools"></a>Web tools</h4><p><a id="tide"></a></p>
 <ol>
 <li><a target="_blank" rel="noopener" href="http://shinyapps.datacurators.nl/tide/">TIDE</a></li>
 </ol>
@@ -1703,7 +1786,7 @@
 <hr>
 <p><a id="sequencing-analysis"></a></p>
 <h2 id="Sequencing-Analysis"><a href="#Sequencing-Analysis" class="headerlink" title="Sequencing Analysis"></a>Sequencing Analysis</h2><p><a id="ngs-analysis-for-dna-amplicon-sequencing"></a></p>
-<h3 id="NGS-Analysis-for-DNA-amplicon-sequencing"><a href="#NGS-Analysis-for-DNA-amplicon-sequencing" class="headerlink" title="NGS Analysis for DNA amplicon sequencing"></a>NGS Analysis for DNA amplicon sequencing</h3><h4 id="Web-tools-9"><a href="#Web-tools-9" class="headerlink" title="Web tools"></a>Web tools</h4><ol>
+<h3 id="NGS-Analysis-for-DNA-amplicon-sequencing"><a href="#NGS-Analysis-for-DNA-amplicon-sequencing" class="headerlink" title="NGS Analysis for DNA amplicon sequencing"></a>NGS Analysis for DNA amplicon sequencing</h3><h4 id="Web-tools-8"><a href="#Web-tools-8" class="headerlink" title="Web tools"></a>Web tools</h4><ol>
 <li><a target="_blank" rel="noopener" href="http://crispr-ga.net/">CRISPR-GA</a></li>
 </ol>
 <ul>
@@ -1917,7 +2000,7 @@
 </ul>
 <hr>
 <p><a id="ngs-analysis-for-unbiased-dna-off-target-detection"></a></p>
-<h3 id="NGS-Analysis-for-unbiased-DNA-off-target-detection"><a href="#NGS-Analysis-for-unbiased-DNA-off-target-detection" class="headerlink" title="NGS Analysis for unbiased DNA off-target detection"></a>NGS Analysis for unbiased DNA off-target detection</h3><h4 id="Web-tools-10"><a href="#Web-tools-10" class="headerlink" title="Web tools"></a>Web tools</h4><ol>
+<h3 id="NGS-Analysis-for-unbiased-DNA-off-target-detection"><a href="#NGS-Analysis-for-unbiased-DNA-off-target-detection" class="headerlink" title="NGS Analysis for unbiased DNA off-target detection"></a>NGS Analysis for unbiased DNA off-target detection</h3><h4 id="Web-tools-9"><a href="#Web-tools-9" class="headerlink" title="Web tools"></a>Web tools</h4><ol>
 <li><a target="_blank" rel="noopener" href="http://www.rgenome.net/digenome-js/#!">Digenome-seq web tool</a></li>
 </ol>
 <img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/521610/1c033446-d212-8724-540f-53ae52b7d609.png" width="400">
@@ -2136,7 +2219,7 @@
 <hr>
 <p><a id="crispr-screen"></a></p>
 <h2 id="CRISPR-screen"><a href="#CRISPR-screen" class="headerlink" title="CRISPR screen"></a>CRISPR screen</h2><p><a id="pooled-crispr-screen"></a></p>
-<h3 id="pooled-CRISPR-screen"><a href="#pooled-CRISPR-screen" class="headerlink" title="pooled CRISPR screen"></a>pooled CRISPR screen</h3><h4 id="Web-tools-11"><a href="#Web-tools-11" class="headerlink" title="Web tools"></a>Web tools</h4><ol>
+<h3 id="pooled-CRISPR-screen"><a href="#pooled-CRISPR-screen" class="headerlink" title="pooled CRISPR screen"></a>pooled CRISPR screen</h3><h4 id="Web-tools-10"><a href="#Web-tools-10" class="headerlink" title="Web tools"></a>Web tools</h4><ol>
 <li><a target="_blank" rel="noopener" href="https://crispr.nrihub.org/">CRISPRcloud</a></li>
 </ol>
 <img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/521610/3be5bc28-e842-4c42-7930-766fd84d83db.png" width="400">
@@ -2368,16 +2451,9 @@
 <li><a target="_blank" rel="noopener" href="https://figshare.com/articles/PASTMUS_mapping_functional_elements_at_single_amino_acid_resolution_in_human_cells/10435370">PASTMUS</a></li>
 </ol>
 <hr>
-<p><a id="rna-editing"></a></p>
-<h2 id="RNA-editing"><a href="#RNA-editing" class="headerlink" title="RNA editing"></a>RNA editing</h2><h4 id="Web-tools-12"><a href="#Web-tools-12" class="headerlink" title="Web tools"></a>Web tools</h4><ol>
-<li><a target="_blank" rel="noopener" href="http://prep.unl.edu/">PREP Suite</a></li>
-</ol>
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/521610/73785edb-d93f-f171-10e5-0545acba2dfa.png" width="400">
-
-<hr>
 <p><a id="crispr-biology"></a></p>
 <h2 id="CRISPR-Biology"><a href="#CRISPR-Biology" class="headerlink" title="CRISPR Biology"></a>CRISPR Biology</h2><p><a id="crispr-array"></a></p>
-<h3 id="CRISPR-array"><a href="#CRISPR-array" class="headerlink" title="CRISPR array"></a>CRISPR array</h3><h4 id="Web-tools-13"><a href="#Web-tools-13" class="headerlink" title="Web tools"></a>Web tools</h4><ol>
+<h3 id="CRISPR-array"><a href="#CRISPR-array" class="headerlink" title="CRISPR array"></a>CRISPR array</h3><h4 id="Web-tools-11"><a href="#Web-tools-11" class="headerlink" title="Web tools"></a>Web tools</h4><ol>
 <li><a target="_blank" rel="noopener" href="https://crisprcas.i2bc.paris-saclay.fr/CrisprCasFinder/Index">CRISPRCasFinder [online]</a></li>
 </ol>
 <img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/521610/9cda4a28-9ef0-ff15-1aa8-da7eecf401cf.png" width="400">
@@ -2581,7 +2657,7 @@
 <p><a target="_blank" rel="noopener" href="https://doi.org/10.1089/crispr.2021.0021">Nethery et al., 2021</a></p>
 <hr>
 <p><a id="annotation-mapping-lineage-analysis-of-crispr-array"></a></p>
-<h3 id="annotation-mapping-lineage-analysis-of-CRISPR-array"><a href="#annotation-mapping-lineage-analysis-of-CRISPR-array" class="headerlink" title="annotation, mapping, lineage analysis of CRISPR array"></a>annotation, mapping, lineage analysis of CRISPR array</h3><h4 id="Web-tools-14"><a href="#Web-tools-14" class="headerlink" title="Web tools"></a>Web tools</h4><ol>
+<h3 id="annotation-mapping-lineage-analysis-of-CRISPR-array"><a href="#annotation-mapping-lineage-analysis-of-CRISPR-array" class="headerlink" title="annotation, mapping, lineage analysis of CRISPR array"></a>annotation, mapping, lineage analysis of CRISPR array</h3><h4 id="Web-tools-12"><a href="#Web-tools-12" class="headerlink" title="Web tools"></a>Web tools</h4><ol>
 <li><a target="_blank" rel="noopener" href="http://rna.informatik.uni-freiburg.de/CRISPRmap/Input.jsp">CRISPRmap</a></li>
 </ol>
 <img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/521610/462ba5d4-092d-d4b6-9994-52aeda0b0538.png" width="400">
@@ -2611,7 +2687,7 @@
 </ol>
 <hr>
 <p><a id="anti-crispr-acr"></a></p>
-<h3 id="Anti-CRISPR-Acr"><a href="#Anti-CRISPR-Acr" class="headerlink" title="Anti-CRISPR (Acr)"></a>Anti-CRISPR (Acr)</h3><h4 id="Web-tools-15"><a href="#Web-tools-15" class="headerlink" title="Web tools"></a>Web tools</h4><ol>
+<h3 id="Anti-CRISPR-Acr"><a href="#Anti-CRISPR-Acr" class="headerlink" title="Anti-CRISPR (Acr)"></a>Anti-CRISPR (Acr)</h3><h4 id="Web-tools-13"><a href="#Web-tools-13" class="headerlink" title="Web tools"></a>Web tools</h4><ol>
 <li><a target="_blank" rel="noopener" href="http://bcb.unl.edu/AcrFinder/">AcrFinder</a></li>
 </ol>
 <img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/521610/c9fc782b-012d-6d48-5568-9e45374c79b3.png" width="400">
@@ -2656,7 +2732,7 @@
 <hr>
 <p><a id="phenotypic-analysis"></a></p>
 <h2 id="Phenotypic-Analysis"><a href="#Phenotypic-Analysis" class="headerlink" title="Phenotypic Analysis"></a>Phenotypic Analysis</h2><p><a id="gene-analysis"></a></p>
-<h3 id="Gene-Analysis"><a href="#Gene-Analysis" class="headerlink" title="Gene Analysis"></a>Gene Analysis</h3><h4 id="Web-tools-16"><a href="#Web-tools-16" class="headerlink" title="Web tools"></a>Web tools</h4><ol>
+<h3 id="Gene-Analysis"><a href="#Gene-Analysis" class="headerlink" title="Gene Analysis"></a>Gene Analysis</h3><h4 id="Web-tools-14"><a href="#Web-tools-14" class="headerlink" title="Web tools"></a>Web tools</h4><ol>
 <li><a target="_blank" rel="noopener" href="http://nest.dfci.harvard.edu/">NEST</a></li>
 </ol>
 <img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/521610/306e1d38-ce1c-e93c-618f-5269c20c7584.png" width="400">
@@ -2685,7 +2761,7 @@
 </ul>
 <hr>
 <p><a id="database"></a></p>
-<h2 id="Database"><a href="#Database" class="headerlink" title="Database"></a>Database</h2><h4 id="Web-tools-17"><a href="#Web-tools-17" class="headerlink" title="Web tools"></a>Web tools</h4><ol>
+<h2 id="Database"><a href="#Database" class="headerlink" title="Database"></a>Database</h2><h4 id="Web-tools-15"><a href="#Web-tools-15" class="headerlink" title="Web tools"></a>Web tools</h4><ol>
 <li><a target="_blank" rel="noopener" href="https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chrX:15581111-15581538&hgsid=839730373_U67N3lsR0quAY0Cldt2HnY7A74S1">UCSC genome browser</a></li>
 </ol>
 <img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/521610/2c4d5d05-eed2-14cd-0ca4-c03c72256486.png" width="400">
@@ -2937,7 +3013,7 @@
 </ul>
 <hr>
 <ol start="34">
-<li><a target="_blank" rel="noopener" href="https://crisprlipid.org/">CRISPRbase</a></li>
+<li><a target="_blank" rel="noopener" href="https://crisprlipid.org/">CRISPRlipid</a></li>
 </ol>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://doi.org/10.1016/j.devcel.2023.07.001">Roberts et al., 2023</a></li>
@@ -2961,7 +3037,7 @@
 <li><a target="_blank" rel="noopener" href="https://bonohu.hiroshima-u.ac.jp/gem/">GEM</a></li>
 </ol>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://doi.org/10.1016/j.ggedit.2022.100024">Suzuki and Bono</a></li>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.1016/j.ggedit.2022.100024">Suzuki and Bono, 2022</a></li>
 </ul>
 <hr>
 <h4 id="CLI-tools-20"><a href="#CLI-tools-20" class="headerlink" title="CLI tools"></a>CLI tools</h4><ol>
@@ -2983,7 +3059,7 @@
 </ol>
 <hr>
 <p><a id="other-tools-involved-with-crispr-science"></a></p>
-<h2 id="Other-tools-involved-with-CRISPR-science"><a href="#Other-tools-involved-with-CRISPR-science" class="headerlink" title="Other tools involved with CRISPR science"></a>Other tools involved with CRISPR science</h2><h4 id="Web-tools-18"><a href="#Web-tools-18" class="headerlink" title="Web tools"></a>Web tools</h4><ol>
+<h2 id="Other-tools-involved-with-CRISPR-science"><a href="#Other-tools-involved-with-CRISPR-science" class="headerlink" title="Other tools involved with CRISPR science"></a>Other tools involved with CRISPR science</h2><h4 id="Web-tools-16"><a href="#Web-tools-16" class="headerlink" title="Web tools"></a>Web tools</h4><ol>
 <li><a target="_blank" rel="noopener" href="http://www.rgenome.net/crevis-seq/#!">CReVIS-Seq - RGEN Tools</a></li>
 </ol>
 <img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/521610/b1da7bde-8612-e9e6-5ac7-60d061ed0410.png" width="400">
@@ -2992,12 +3068,19 @@
 <li><a target="_blank" rel="noopener" href="https://doi.org/10.1016/j.omtm.2020.10.012">Kim et al., 2021</a></li>
 </ul>
 <hr>
-<h4 id="CLI-tools-21"><a href="#CLI-tools-21" class="headerlink" title="CLI tools"></a>CLI tools</h4><p><strong>Scala</strong></p>
-<ol>
-<li><a target="_blank" rel="noopener" href="https://github.com/aaronmck/Cas9FateMapping">Cas9FateMapping</a></li>
+<ol start="2">
+<li><a target="_blank" rel="noopener" href="https://t.co/NE2igaOj3w?amp=1">CRISPRcruncher</a></li>
 </ol>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://benchling.com/pub/shendure-gestalt">GESTALT</a></li>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.17912/micropub.biology.000343">Fay et al., 2021</a></li>
+</ul>
+<hr>
+<h4 id="CLI-tools-21"><a href="#CLI-tools-21" class="headerlink" title="CLI tools"></a>CLI tools</h4><p><strong>Scala</strong></p>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://github.com/aaronmck/Cas9FateMapping">Cas9FateMapping (GESTALT)</a></li>
+</ol>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.1126/science.aaf7907">McKenna et al., 2016</a></li>
 </ul>
 <hr>
 <p><strong>R</strong></p>
@@ -3170,6 +3253,13 @@
 <li><a target="_blank" rel="noopener" href="https://t.co/PW7jCrxflb?amp=1">Obeid and AlMarzouqi, 2022</a></li>
 </ul>
 <hr>
+<ol start="8">
+<li><a target="_blank" rel="noopener" href="http://prep.unl.edu/">PREP Suite</a></li>
+</ol>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://doi.org/10.1093/nar/gkp337">Mower, 2009</a></li>
+</ul>
+<hr>
 
       
     </div>
@@ -3233,7 +3323,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       
-      &copy; 2023 Kazuki Nakamae, Ph.D., Hiroshima Univ, Japan.<br>
+      &copy; 2025 Kazuki Nakamae, Ph.D., Hiroshima Univ, Japan.<br>
       Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
